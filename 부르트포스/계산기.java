@@ -1,4 +1,4 @@
-package 수학;
+package 부르트포스;
 import java.util.*;
 class Solution{
      public static void main(String[] args) {
