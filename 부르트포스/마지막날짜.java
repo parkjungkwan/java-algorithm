@@ -36,7 +36,7 @@ class 마지막날짜 {
         
         System.out.println(solution.solution(year, month));
     }
-    String solution(int year,int month){
+    public String solution(int year,int month){
         int lastDay = 0;
         switch(month){
             case 1: case 3: case 5: case 7: case 8: case 10: case 12: lastDay=31; break;
@@ -50,12 +50,15 @@ class 마지막날짜 {
         +"%d %d %d\n"
         +"*************", year, month, lastDay);
     }
-    int checkLeapYear(int year){
+    public int checkLeapYear(int year){
         int lastDay = 0;
         if(year % 400 == 0){lastDay = 29;}
         else if(year % 100 == 0){lastDay = 28;}
         else if(year % 4 == 0){lastDay = 29;}
         else{lastDay = 28;}
         return lastDay;
+    }
+    public void test(){
+
     }
 }
